@@ -22,6 +22,19 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   color: var(--primary-text-color);
 
@@ -222,6 +235,7 @@ body {
   padding-bottom: 94px;
   margin: 0px;
 }
+
 
 .section-title {
   color: var(--title-text-color);
@@ -632,6 +646,7 @@ body {
 
 .check-link {
   margin-left: 9px;
+  color: rgba(33, 150, 243, 1);
 }
 
 .form-button {
@@ -762,8 +777,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
+.link-card:hover .portfolio-overlay,
+.link-card:focus .portfolio-overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -877,6 +892,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.6);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .input::placeholder {
@@ -915,6 +931,6 @@ body {
 }
 .btn {
   display: flex;
-  margin-top: 54px;
+  margin-top: 55px;
   margin-bottom: auto;
 }
